@@ -1,0 +1,96 @@
+:root {
+    --backgroundColor: ;
+    --textColor: ;
+    --linkColor: ;
+    --buttonColor: ;
+    --buttonFade: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.3em;
+    box-sizing: border-box;
+    scroll-behavior: unset;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+}
+
+#title {
+    margin-top: 0px;
+    font-size: 3.4rem;
+    line-height: 1em;
+}
+#credits {
+    margin-top: 0px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+hr {
+    border-color: var(--linkColor);
+    opacity: 15%;
+    height: 1px;
+    margin-top: 40px;
+    width: 50%;
+    margin-bottom: 40px;
+}
+#flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+    width: 1000px;
+    margin: 30px auto;
+}
+#generate {
+    user-select: none;
+    padding: 5px 10px 5px 10px;
+    color: var(--textColor);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    background-color: var(--buttonColor);
+
+    margin-top: 20px;
+}
+#generate:hover {
+    background-color: var(--buttonFade);
+}
+p {
+    padding: 10px;
+    white-space: pre-wrap;
+    width: inherit;
+    text-align: left;
+    max-width: inherit;
+    width: 500px;
+    margin-bottom: 200px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--backgroundColor);
+    box-shadow: 0 10px 10px 5px var(--textColor);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+}
+a {
+    line-height: 3em;
+    text-align: center;
+    color: var(--linkColor);
+    font-size: 1.0rem;
+}
+a:visited {
+    color: var(--linkColor);
+}
+#numNames {
+    text-align: center;
+    width: 200px;
+}
